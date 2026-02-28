@@ -1,11 +1,16 @@
 /* style.css */
 
-body {
+    body {
       font-family: 'Poppins', sans-serif;
       background-color: #f4f4f4;
       color: #333;
       height: 100%;
       margin: 0 auto;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
     .scrollspy {
       position: relative;
@@ -244,4 +249,5 @@ body {
     .card {
       border: none!important;
       background-color: #f4f4f4;
+
     }
