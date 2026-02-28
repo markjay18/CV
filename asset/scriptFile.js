@@ -28,3 +28,14 @@ if (webRedirectBtn) {
     });
 }
 
+
+const profile = document.getElementById("profile");
+
+if (profile) {
+    profile.addEventListener("click", function () {
+        const profileEncodedPath = "https://markjay18.github.io/tsxml-app/";
+
+        window.open(profileEncodedPath, "_blank", "noopener,noreferrer");
+    });
+}
+
