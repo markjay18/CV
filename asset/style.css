@@ -249,5 +249,25 @@
     .card {
       border: none!important;
       background-color: #f4f4f4;
+    }
 
+    .alert {
+      display: flex;
+      flex-direction: column; /* stack image and link vertically */
+      align-items: center;    /* center horizontally */
+      text-align: center;     /* center text inside */
+      gap: 10px;              /* space between items */
+    }
+
+    .alert .profile {
+      max-width: 100px;       /* optional: resize the image */
+      border-radius: 50%;     /* optional: make it circular */
+    }
+
+    .alert a {
+      text-decoration: none;
+    }
+
+    .profLink {
+      cursor: pointer;
     }
