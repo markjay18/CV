@@ -39,3 +39,13 @@ if (profile) {
     });
 }
 
+const homePage = document.getElementById("homePage");
+
+if (homePage) {
+    homePage.addEventListener("click", function () {
+        const errEncodedPath = "err.html";
+
+        window.location.href = errEncodedPath;
+    });
+}
+
